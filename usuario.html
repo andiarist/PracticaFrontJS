@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='module' src="./js/usuario.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mi Perfil - API Pelis</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Beienvenid@ <span class="nombre_usuario"></span>!!</h1>
+        <h2>Películas más populares:</h2>
+
+        <div class="pelis">
+            <table class="tabla_pelis">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Fecha de estreno</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>                
+            </table>
+            
+            <div class="paginar">
+                <button type="button"  id="prev" class="boton hidden"><< Previo</button>
+                <button type="button" id="next"class="boton">Siguiente >></button>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>    
+</body>
+</html>

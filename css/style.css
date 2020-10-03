@@ -1,0 +1,164 @@
+header, footer{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px 0;    
+}
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;        
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    background-color: midnightblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+header .menu a {
+    padding: 1.3rem;
+    color: lightblue;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+form{
+    width: 90%;
+    margin: 5px auto 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(173, 230, 201);
+}
+
+fieldset{
+    border: 0;
+    margin: 5px;
+}
+
+legend {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#f_login fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mensaje de error de registro y login */
+.error{
+    color: rgb(248, 93, 32);
+    font-size: 1.2rem;
+    padding: 5px 15px;
+}
+
+
+/* Tabla de pelis */
+.pelis{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.pelis table{
+    border: 1px solid blueviolet;
+}
+.pelis table thead{
+    background-color: lavender;
+}
+.filas{
+    background-color: lightcyan;    
+}
+
+th, td{
+    border-spacing: 0;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.paginar{
+    margin-top: 10px;
+    /*width: 50%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paginar .boton{
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px 5px;
+    border: 0;
+}
+.paginar .boton:hover, td.celda_id:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ficha pelis */
+
+.datos_peli{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.datos_peli ul{
+    /*margin-top: 10px;*/
+}
+.datos_peli ul li{
+    margin: 10px 0;    
+}
+.datos_peli p.volver{
+    margin-bottom: 20px;
+}
+.datos_peli p.volver a{
+    background-color: goldenrod;    
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+}
+.datos_peli p.volver a:hover{
+    text-decoration: underline;
+}
+
+@media all and (min-width: 768px){
+    .main_pelicula{
+        width: 750px;
+        margin: 10px auto;
+    }
+	.ficha_peli{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 15px;
+	}
+	.ficha_peli aside{
+		display: block;
+	}
+}
+@media all and (min-width: 991px){
+	.ficha_peli{
+		grid-template-columns: 1fr 2fr;
+	}
+}

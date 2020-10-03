@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='module' src="./js/registro.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro - API Pelis</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Registro</h1>
+        <form id="f_registro" action="">
+            <fieldset>
+                <legend>Género:</legend>
+                <input type="radio" name="genero" id="mujer" value="Mujer" required>
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="genero" id="hombre" value="Hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="otros" value="Otros">
+                <label for="otros">Otros</label>
+            </fieldset>
+            <fieldset>
+                <legend>Nombre y Apellidos:</legend>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                
+                <input type="text" name="apellidos" id="apellidos" placeholder="apellidos" required>
+                
+            </fieldset>
+            <fieldset>
+                <legend>País:</legend>
+                <input type="radio" name="nacionalidad" id="espan" value="Española" class="espan" required>
+                <label for="espan" class="espan">España</label>
+                <input type="radio" name="nacionalidad" id="extrangero" value="Extrangero">
+                <label for="extrangero">Extrangero</label>
+                
+            </fieldset>
+            <fieldset class="hidden provincias">
+                <label for="provincias"></label>
+                <select id="provincias" required>
+                    <option value=""></option>
+                </select>  
+                
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto:</legend>
+                <input type="tel" name="mobile" id="mobile" placeholder="Telf. móvil" required>
+                
+                <input type="email" name="email" id="email" placeholder="email" required>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Datos de acceso:</legend>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
+                
+                <input type="text" name="api_key" id="api_key" placeholder="API Key" required>
+                
+                <input type="password" name="pass" id="pass" placeholder="contraseña" required>
+                
+                <input type="password" name="pass2" id="pass2" placeholder="repite la contraseña" required>
+                
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="condiciones" id="condiciones" required>
+                <label for="condiciones">He leído y acepto las condiciones</label>       
+                    
+            </fieldset>
+            <div>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>                
+            </div>
+            <div>
+                <p class="error"></p>
+            </div>
+            <div>
+                <button type="button" id="b_registro">Registrar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+    <footer></footer>    
+</body>
+</html>
